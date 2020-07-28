@@ -1,0 +1,52 @@
+pre requists
+
+  install frameworks
+    -react 
+    npm create-react-app name_of_project
+    -firebase 
+
+    -React Router
+
+    -Material.ui
+    npm install @material-ui/core
+    npm install @material-ui/icons
+
+
+App.js = components what are seen < component hub
+    <Router Component that wraps the components seen and acts as a switch box between pages... acts like a switch statemen for <route>
+
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/checkout">
+            <h1>Checkout</h1>
+          </Route>
+          <Route path="/login">
+            <h1>Login</h1>
+          </Route>
+          <Route path="/">
+            <h1>Home</h1>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+
+
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBWmCsNAONu6X0No74HfkRCFQ6_TYxV9y8",
+  authDomain: "clone-66696.firebaseapp.com",
+  databaseURL: "https://clone-66696.firebaseio.com",
+  projectId: "clone-66696",
+  storageBucket: "clone-66696.appspot.com",
+  messagingSenderId: "652279106467",
+  appId: "1:652279106467:web:4ce0c0e61e72788865a816",
+  measurementId: "G-JGWY5JYBZX"
+};
