@@ -32,7 +32,9 @@ pre requists
     -acts like global variables
     -look into further
 
-
+  7 Subtotal and Checkout pages
+ 
+  8 login form
 
     Routes / App.js
     function App() {
