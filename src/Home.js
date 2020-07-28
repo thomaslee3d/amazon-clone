@@ -13,7 +13,7 @@ function Home() {
         {/* product params(props) id title price rating image */}
         <div className="home__row">
           <Products
-            id="12321341"
+            id="12221341"
             title="Rubber Ducky"
             price={1.99}
             rating={5}
@@ -22,7 +22,7 @@ function Home() {
             }
           />
           <Products
-            id="12321341"
+            id="12321041"
             title="The Shadows"
             price={13.99}
             rating={5}
@@ -33,7 +33,7 @@ function Home() {
         </div>
         <div className="home__row">
           <Products
-            id="12321341"
+            id="12321241"
             title="I Pad"
             price={499.99}
             rating={4}
@@ -42,7 +42,7 @@ function Home() {
             }
           />
           <Products
-            id="12321341"
+            id="12921341"
             title="Lego Playset"
             price={49.99}
             rating={5}
@@ -51,7 +51,7 @@ function Home() {
             }
           />
           <Products
-            id="12321341"
+            id="12321348"
             title="Umbrella"
             price={13.99}
             rating={5}
@@ -62,7 +62,7 @@ function Home() {
         </div>
         <div className="home__row">
           <Products
-            id="12321341"
+            id="12351341"
             title="Blender"
             price={49.99}
             rating={5}
