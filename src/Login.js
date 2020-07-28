@@ -3,8 +3,10 @@ import "./Login.css";
 
 function Login() {
     return (
+        
       <div className="login">
-        <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" />
+      <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+            alt=''/>
         <div className="login__email">
           <h1>Sign In</h1>
           <h3>Email (phone for mobile accounts)</h3>
