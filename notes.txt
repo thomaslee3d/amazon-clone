@@ -1,6 +1,6 @@
 pre requists
 
-  install frameworks
+  1 install frameworks
     -react 
     npm create-react-app name_of_project
     -firebase 
@@ -10,6 +10,55 @@ pre requists
     -Material.ui
     npm install @material-ui/core
     npm install @material-ui/icons
+
+  2 set up Routes in App.js
+    -switch routes etc
+
+  3 build Header Component
+    -links
+    -search bar 
+    -material.ui 
+
+  4 build Home
+    -banner (gradient)
+
+  5 Product Cards
+    -passing props
+    -deconstructing props
+    -style connects to indvidual components
+
+  6 react context api 
+    -a data layer / accesible by the whole app
+    -acts like global variables
+    -look into further
+
+  7 Subtotal and Checkout pages
+ 
+  8 login form
+
+    Routes / App.js
+    function App() {
+      return (
+        <Router>
+          <div className="app">
+            <Switch>
+              <Route path="/checkout">
+                <Header />
+                <h1>Checkout</h1>
+              </Route>
+              <Route path="/login">
+                <h1>Login</h1>
+              </Route>
+              <Route path="/">
+                <Header />
+                <Home />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      );
+    }
+
 
 
 App.js = components what are seen < component hub
@@ -37,7 +86,69 @@ function App() {
 }
 
 
+Header.js component
+import React from 'react'
+import "./Header.css"
+import { Link } from 'react-router-dom';
+import SearchIcon from "@material-ui/icons/Search"
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket"
 
+function Header() {
+    return (
+      <nav className="header">
+        {/* left logo */}
+        <Link to="/">
+          <img
+            className="header__logo"
+            src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+            alt=""
+          />
+        </Link>
+
+        {/*Search Box*/}
+        <div className="header__search">
+          <input type="text" className="header__searchInput"></input>
+          <SearchIcon className="header__searchIcon" />
+        </div>
+
+        {/*3 links */}
+        <div className="header__nav">
+          {/* 1st link*/}
+          <Link to="/login" className="header__link">
+            <div className="header__option">
+              <span className="header__optionLineOne">hello,</span>
+              <span className="header__optionLineTwo">sign in</span>
+            </div>
+          </Link>
+
+          {/* 2st link*/}
+          <Link to="/" className="header__link">
+            <div className="header__option">
+              <span className="header__optionLineOne">Returns</span>
+              <span className="header__optionLineTwo">& Orders</span>
+            </div>
+          </Link>
+
+          {/* 3st link*/}
+          <Link to="/" className="header__link">
+            <div className="header__option">
+              <span className="header__optionLineOne">Your</span>
+              <span className="header__optionLineTwo">Prime</span>
+            </div>
+          </Link>
+
+          {/* 4st link*/}
+          <Link to="/checkout" className="header__optionBasket">
+            {/* Shopping basket icon*/}
+            <ShoppingBasketIcon className="header__optionLineTwo" />
+            <span className="header__basketCount">0</span>
+          </Link>
+        </div>
+      </nav>
+    );
+}
+
+export default Header
 
 
 const firebaseConfig = {
