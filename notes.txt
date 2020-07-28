@@ -23,8 +23,14 @@ pre requists
     -banner (gradient)
 
   5 Product Cards
+    -passing props
+    -deconstructing props
+    -style connects to indvidual components
 
-
+  6 react context api 
+    -a data layer / accesible by the whole app
+    -acts like global variables
+    -look into further
 
 
 
